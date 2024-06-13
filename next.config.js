@@ -2,11 +2,16 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+});
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
   experimental: {
+    mdxRs: true,
     turbo: {
       rules: {
         "*.svg": {
@@ -26,4 +31,8 @@ const nextConfig = {
   },
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+module.exports = withBundleAnalyzer(
+  withMDX(
+    nextConfig
+  )
+);
