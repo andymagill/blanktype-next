@@ -32,6 +32,19 @@ To build the production-ready optimized bundle: `npm run build` or `yarn build`
 ### Linting
 This project uses ESLint for code linting. Run the linter with: `npm run lint` or `yarn lint`
 
+
+## Upstream Updates and Forks 
+If you want to use this project as a starting point for your own project, you can fork the repository on GitHub and then set the original repository as an "upstream" remote. This will allow you to pull in updates and bug fixes from the original repository into your forked version.
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository: `git clone https://github.com/andymagill/blanktype-next.git`
+3. Change to the project directory: `cd blanktype-next`
+4. Add the original repository as an upstream remote: `git remote add upstream https://github.com/andymagill/blanktype-next.git`
+5. To pull in updates from the upstream repository, run: `git pull upstream main`
+
+By following these steps, you can keep your forked version of the project up-to-date with the latest changes from the original repository.
+
+
 ## Contributing
 Contributions are welcome! Please follow the [contributing guidelines](CONTRIBUTING.md) when submitting pull requests.
 
