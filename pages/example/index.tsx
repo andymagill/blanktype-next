@@ -6,7 +6,7 @@ import styles from "../../styles/Home.module.css";
 // example usage for scss jsx
 const hoverColor = "purple";
 
-const Home: NextPage = () => {
+const Example: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -84,4 +84,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Example;
