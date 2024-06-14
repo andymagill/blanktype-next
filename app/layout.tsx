@@ -1,4 +1,4 @@
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -6,10 +6,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      { /* SETUP: place GTM ID in .env file */ }
+    <html lang='en'>
+      {/* SETUP: place GTM ID in .env file */}
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA_ID as string} />
-      
+
       <body>{children}</body>
     </html>
   );
