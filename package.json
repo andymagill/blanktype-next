@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -28,6 +28,7 @@
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "^9.1.0",
     "jsdom": "^23.0.1",
     "typescript": "5.3.3",
     "vitest": "1.0.4"
