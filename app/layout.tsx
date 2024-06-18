@@ -1,6 +1,7 @@
 import { GoogleTagManager } from '@next/third-parties/google';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import styles from '../styles/components/layout.module.css';
 
 export default function RootLayout({
   children,
@@ -14,11 +15,9 @@ export default function RootLayout({
 
       <body>
         <div>
-          <main>
-            <Header />
-            {children}
-            <Footer />
-          </main>
+          <Header />
+          <main className={styles.main}>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
