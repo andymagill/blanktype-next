@@ -13,17 +13,21 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ navList = [] }) => {
-  return (
-    <nav>
-      <ul>
-        {navList.map((navItem, index) => (
-          <li key={`nav-${index}`}>
-            <Link href={navItem.path}>{navItem.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
+  if (navList.length > 0) {
+    return (
+      <nav>
+        <ul>
+          {navList.map((navItem, index) => (
+            <li key={`nav-${index}`}>
+              <Link href={navItem.path}>{navItem.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  } else {
+    return null;
+  }
 };
 
 export default Navbar;
