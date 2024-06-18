@@ -1,5 +1,6 @@
 import { siteConfig } from '../config/site';
 import Vercel from '/public/vercel.svg';
+import '../styles/globals.css';
 
 export const metadata = {
   title: siteConfig.title,
