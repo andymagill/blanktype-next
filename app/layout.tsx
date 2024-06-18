@@ -9,11 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      {/* SETUP: place GTM ID in .env file */}
+      {/* FIXME: place real GTM ID in .env file or hardcode here */}
       <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA_ID as string} />
 
       <body>
-        <div className='[age'>
+        <div>
           <main>
             <Header />
             {children}

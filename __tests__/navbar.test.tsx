@@ -13,7 +13,7 @@ test('renders Navbar with navList', () => {
   });
 });
 
-test('renders Navbar without navList', () => {
+test('does not render Navbar without navList', () => {
   const { container } = render(<Navbar />);
   expect(container.firstChild).toBeNull();
 });

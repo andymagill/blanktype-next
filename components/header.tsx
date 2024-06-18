@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header>
-      <div>
+      <div className='container'>
         <div className='logo'>
           {/* TODO: create logo component */}
           {siteConfig.title}

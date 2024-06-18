@@ -12,17 +12,19 @@ interface NavbarProps {
   navList?: NavItem[];
 }
 
+const renderNavItems = (navList: NavItem[]) => {
+  return navList.map((navItem, index) => (
+    <li key={`nav-${index}`}>
+      <Link href={navItem.path}>{navItem.title}</Link>
+    </li>
+  ));
+};
+
 const Navbar: React.FC<NavbarProps> = ({ navList = [] }) => {
   if (navList.length > 0) {
     return (
-      <nav>
-        <ul>
-          {navList.map((navItem, index) => (
-            <li key={`nav-${index}`}>
-              <Link href={navItem.path}>{navItem.title}</Link>
-            </li>
-          ))}
-        </ul>
+      <nav role='navigation' aria-label='menu'>
+        <ul>{renderNavItems(navList)}</ul>
       </nav>
     );
   } else {
