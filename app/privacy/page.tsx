@@ -1,8 +1,7 @@
 import { siteConfig } from '../../config/site';
-import '../../styles/globals.css';
 
 export const metadata = {
-  title: 'Privacy Policy - ${siteConfig.title',
+  title: 'Privacy Policy' + siteConfig.title,
   description: siteConfig.description,
 };
 
