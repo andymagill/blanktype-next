@@ -1,9 +1,12 @@
 import React from 'react';
 import Navbar, { NavItem } from './navbar';
-import styles from '../styles/components/footer.module.css';
+import styles from '../styles/components/footer.module.scss';
 
 export default function Footer() {
-  const navItems: NavItem[] = [{ path: '/privacy', title: 'Privacy Policy' }];
+  const navItems: NavItem[] = [
+    { path: '/', title: 'Home' },
+    { path: '/privacy', title: 'Privacy Policy' },
+  ];
 
   return (
     <footer className={styles.footer}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar, { NavItem } from './navbar';
 import { siteConfig } from '../config/site';
-import '../styles/components/header.css';
+import '../styles/components/header.scss';
 
 export default function Header() {
   const navItems: NavItem[] = [{ path: '/', title: 'Home' }];

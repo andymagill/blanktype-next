@@ -1,0 +1,17 @@
+/* header.scss */
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

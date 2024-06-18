@@ -1,0 +1,24 @@
+/* footer.module.css */
+
+.footer {
+  text-align: center;
+
+  p {
+    font-size: 0.875rem;
+  }
+  ul {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

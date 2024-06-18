@@ -3,7 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 import '../styles/global.scss';
-import styles from '../styles/components/layout.module.css';
+import styles from '../styles/layout.module.css';
 
 export default function RootLayout({
   children,
