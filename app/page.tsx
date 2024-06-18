@@ -1,5 +1,4 @@
 import { siteConfig } from '../config/site';
-import Vercel from '/public/vercel.svg';
 import '../styles/globals.css';
 
 export const metadata = {
@@ -12,7 +11,6 @@ export default function Page() {
     <>
       <h1>Welcome to {siteConfig.title}</h1>
       <p>{siteConfig.description}</p>
-      <Vercel />
     </>
   );
 }

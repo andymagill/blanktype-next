@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { UrlObject } from 'url';
 import '../styles/components/navbar.css';
 
-interface NavItem {
+export interface NavItem {
   path: string | UrlObject;
   title: string;
 }
