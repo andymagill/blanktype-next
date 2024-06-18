@@ -4,14 +4,13 @@
   padding: 4rem 1rem;
   text-align: center;
 
-  color: rgb(48, 64, 64);
-  background-color: rgb(144, 231, 255);
-  background-image: radial-gradient(
-      at 89% 81%,
-      rgb(256, 217, 120) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 2% 88%, rgb(143, 228, 115) 0px, transparent 50%),
-    radial-gradient(at 88% 8%, rgb(231, 112, 213) 0px, transparent 50%),
-    radial-gradient(at 25% 4%, rgb(239, 165, 96) 0px, transparent 50%);
+  color: rgb(24, 48, 54);
+
+  background-color: rgb(181 129 255);
+  /* prettier-ignore */
+  background-image:
+    radial-gradient(at 88% 8%, rgb(185, 255, 121) 0px, transparent 50%),
+    radial-gradient(at 14% 12%, rgb(244, 121, 188) 0px, transparent 50%),
+    radial-gradient(at 88% 84%, rgb(255, 170, 112) 0px, transparent 50%),
+    radial-gradient(at 8% 92%, rgb(97, 196, 224) 0px, transparent 50%);
 }

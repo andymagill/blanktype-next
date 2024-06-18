@@ -1,4 +1,5 @@
 import { siteConfig } from '../../config/site';
+import styles from '../../styles/pages/privacy.module.scss';
 
 export const metadata = {
   title: 'Privacy Policy' + siteConfig.title,
@@ -7,7 +8,7 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <div id='__next' className='privacy container'>
+    <div id='__next' className={`${styles.privacy} container`}>
       {/* FIXME: replace privacy policy placeholder content */}
       <h2>Privacy Policy</h2>
       <h3>Introduction</h3>

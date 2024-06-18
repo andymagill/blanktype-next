@@ -2,5 +2,5 @@
 export const siteConfig = {
   title: 'BlankType - Next-JS Boilerplate',
   description:
-    'This is a minimalistic Next.JS boilerplate for building custom full-stack web applications',
+    'a minimalistic Next.JS boilerplate for building full-stack web applications',
 };
