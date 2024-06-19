@@ -4,9 +4,10 @@ header {
   border-bottom: 0.88px solid rgb(215, 222, 228);
 
   .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    align-items: center;
   }
   nav {
     a {
@@ -22,8 +23,8 @@ header {
         gap: 1rem;
         position: absolute;
         right: 0;
-        bottom: -90dvh;
-        height: 90dvh;
+        bottom: -88dvh;
+        height: 88dvh;
         padding: 1rem 1.5rem;
         background-color: white;
         flex-direction: column;
@@ -48,6 +49,9 @@ header {
             height: 1.5rem;
             width: 1.5rem;
             text-align: center;
+
+            transform: rotate(0deg);
+            transition: transform 0.25s;
           }
         }
       }
@@ -62,9 +66,14 @@ header {
         & ~ label::before {
           @media (max-width: 480px) {
             content: '⨉';
+            transform: rotate(90deg);
           }
         }
       }
     }
+  }
+  .logo svg {
+    max-height: 2rem;
+    width: auto;
   }
 }

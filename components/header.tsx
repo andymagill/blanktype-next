@@ -1,8 +1,9 @@
 import React from 'react';
-import Navbar, { NavItem } from './navbar';
-import { siteConfig } from '../config/site';
-import '../styles/components/header.scss';
 import Link from 'next/link';
+import { siteConfig } from '../config/site';
+import Navbar, { NavItem } from './navbar';
+import '../styles/components/header.scss';
+import Logo from '/public/images/blanktype-logo.svg';
 
 export default function Header() {
   const navItems: NavItem[] = [{ path: '/', title: 'Home' }];
@@ -12,8 +13,8 @@ export default function Header() {
       <div className='container'>
         <div className='logo'>
           <Link href='/'>
-            {/* TODO: create logo component */}
-            {siteConfig.title}
+            <Logo alt={siteConfig.title} />
+            <span className='visually-hidden'>{siteConfig.title}</span>
           </Link>
         </div>
 
