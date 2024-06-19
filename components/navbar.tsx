@@ -24,6 +24,15 @@ const Navbar: React.FC<NavbarProps> = ({ navList = [] }) => {
   if (navList.length > 0) {
     return (
       <nav role='navigation' aria-label='menu'>
+        <input
+          type='checkbox'
+          id='toggle'
+          role='button'
+          style={{ display: 'none' }}
+        />
+        <label htmlFor='toggle'>
+          <span className='visually-hidden'>Menu</span>
+        </label>
         <ul>{renderNavItems(navList)}</ul>
       </nav>
     );
