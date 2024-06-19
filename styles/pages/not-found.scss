@@ -3,4 +3,11 @@
 .not-found {
   padding: 1rem;
   text-align: center;
+
+  h1 {
+    margin-top: 0;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
 }
