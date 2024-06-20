@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { siteConfig } from '../config/site';
 import Navbar, { NavItem } from './navbar';
 import '../styles/components/header.scss';
-import Logo from '/public/images/blanktype-logo.svg';
+import Logo from '/public/images/blanktype-logo-wide.svg';
 
 export default function Header() {
   const navItems: NavItem[] = [{ path: '/', title: 'Home' }];
